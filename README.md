@@ -1,6 +1,19 @@
 # wayland-screenshot-script
 
+> ⚠️ **免责声明**: 本项目由 LLM (Claude Sonnet 4.6) 自动生成，作者仅在自己的环境中进行过基本使用测试，未在其他环境中进行充分测试。使用本脚本产生的任何问题由使用者自行承担。
+
 一个便捷的截图脚本，支持多种截图模式、自动保存、剪贴板复制和图片编辑。
+
+## 为什么需要这个工具
+
+在日常使用 Linux 桌面环境时，我需要一个简单高效的截图工作流：
+
+1. **快速截图** - 能够快速进行选区、窗口或全屏截图
+2. **自动保存** - 不需要每次手动选择保存位置，统一管理到指定目录
+3. **即时分享** - 截图后直接复制到剪贴板，可以立即粘贴到聊天应用、邮件或文档中
+4. **后续编辑** - 需要标注或编辑时，自动打开图片编辑工具
+
+虽然 `gnome-screenshot` 和 `ksnip` 都很强大，但单独使用它们都无法一次性完成以上所有步骤。这个脚本将它们整合在一起，提供一个完整的一站式截图解决方案。
 
 ## 功能特性
 
@@ -46,7 +59,7 @@ sudo pacman -S gnome-screenshot ksnip wl-clipboard
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/wayland-screenshot-script.git
+git clone https://github.com/liflux/wayland-screenshot-script.git
 cd wayland-screenshot-script
 
 # 赋予执行权限
@@ -165,7 +178,14 @@ MIT License
 
 ## 作者
 
-创建于 2026 年
+本项目由 [liflux](https://github.com/liflux) 创建，代码由 [Claude Sonnet 4.6](https://www.anthropic.com/claude) 自动生成。
+
+## 测试状态
+
+- ✅ 在作者环境 (Ubuntu 24.04) 中基本功能可用
+- ⚠️ 未在其他 Linux 发行版中测试
+- ⚠️ 未在不同桌面环境中测试
+- ⚠️ 未进行充分的边缘情况测试
 
 ## 相关项目
 
